@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%;
+  height: 96vh;
+  background-color: #F0F4F7;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px 7px #a3a3a394;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 600px){
+  #root {
+    height: 100vh;
+    border-radius: 0px;
+  }
+}
+
